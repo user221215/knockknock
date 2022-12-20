@@ -17,7 +17,7 @@
 #
 
 import os, socket
-from Profile import Profile
+from knockknock.Profile import Profile
 
 class Profiles:
 

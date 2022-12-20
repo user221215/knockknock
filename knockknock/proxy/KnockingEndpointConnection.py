@@ -1,5 +1,5 @@
 
-from EndpointConnection import EndpointConnection
+from knockknock.proxy.EndpointConnection import EndpointConnection
 
 import subprocess
 import time

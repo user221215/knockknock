@@ -18,8 +18,8 @@
 
 import syslog
 
-from LogEntry import LogEntry
-from MacFailedException import MacFailedException
+from knockknock.LogEntry import LogEntry
+from knockknock.MacFailedException import MacFailedException
 
 class KnockWatcher:
 

@@ -19,7 +19,7 @@
 import os, syslog, time
 import subprocess
 
-from RuleTimer import RuleTimer
+from knockknock.RuleTimer import RuleTimer
 
 class PortOpener:
 

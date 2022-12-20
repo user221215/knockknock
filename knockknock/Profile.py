@@ -17,12 +17,12 @@
 #
 
 import os, string
-import ConfigParser
+import configparser
 import binascii
 import stat
 from struct import *
 
-from CryptoEngine import CryptoEngine
+from knockknock.CryptoEngine import CryptoEngine
 
 class Profile:
 
@@ -100,7 +100,7 @@ class Profile:
         return int(counter)
 
     def loadConfig(self):
-        config = ConfigParser.SafeConfigParser()
+        config = configparser.SafeConfigParser()
         config.read(self.directory + "/config")
         
         return config.get('main', 'knock_port')
@@ -129,7 +129,7 @@ class Profile:
         self.counterFile.flush()
 
     def storeConfig(self):
-        config = ConfigParser.SafeConfigParser()
+        config = configparser.SafeConfigParser()
         config.add_section('main')
         config.set('main', 'knock_port', str(self.knockPort))
 
@@ -155,6 +155,6 @@ class Profile:
 
     def printHex(self, val):
         for c in val:
-            print "%#x" % ord(c),
+            print("%#x") % ord(c),
             
-        print ""
+        print("")
